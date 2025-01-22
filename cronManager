@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Cron Manager.
+# Added the ## to make the user options more readable
 echo
 echo "$(printf '#%.0s' {1..30})"
 echo "##" "$(printf ' %.0s' {1..24})" "##"
