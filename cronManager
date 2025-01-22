@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Cron Manager
+# Cron Manager.
+echo
+echo "$(printf '#%.0s' {1..30})"
+echo "##" "$(printf ' %.0s' {1..24})" "##"
 echo "1. List Cron Jobs"
 echo "2. Add a Cron Job"
 echo "3. Remove a Cron Job"
 read -p "Choose an option [1-3]: " choice
+echo "##" "$(printf ' %.0s' {1..24})" "##"
+echo "$(printf '#%.0s' {1..30})"
 
 case $choice in
     1) crontab -l;;
